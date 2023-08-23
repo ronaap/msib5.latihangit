@@ -11,13 +11,17 @@
 
     <!-- MY CSS -->
     <style>
+        body {
+            background-color: #f4f5f7;
+        }
+
         .jumbotron {
             padding-top: 6rem;
             background-color: #f4f5f7;
         }
     </style>
 
-    <title>My Portofolio | Rona Aprilia</title>
+    <title>Rona Aprilia</title>
 </head>
 
 <body id="home">
@@ -33,9 +37,6 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -44,14 +45,20 @@
 
     <!-- JumboTron -->
     <section class="jumbotron text-center">
-        <img src="img/profile-pic (3).png" alt="Rona Aprilia" width="200" class="rounded-circle img-thumbnail" />
+        <img src="img/gambarkuceng.jpeg" alt="Rona Aprilia" width="200" class="rounded-circle img-thumbnail" />
         <h1 class="display-4">Rona Aprilia</h1>
         <p class="lead">Undergraduate Informatics Engineering Students at Lampung University</p>
+
+        <?php
+        $semester = 5;
+        $learningPath = "Full-stack Web Developer";
+        echo "<p>Pada semester $semester ini mengikuti Program Studi Independen di PT GITS Indonesia dengan learning path $learningPath</p>";
+        ?>
     </section>
     <!-- Akhir Jumboton -->
 
     <!-- Footer -->
-    <footer class="bg-secondary text-white text-center">
+    <footer class="bg-secondary text-white text-center fixed-bottom">
         <p>by <a href="https://www.instagram.com/ronaprr_/" class="text-white fw-bold">Rona Aprilia</a></p>
     </footer>
     <!-- Akhir Footer -->
